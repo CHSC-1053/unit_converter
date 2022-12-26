@@ -1,0 +1,82 @@
+body {
+  padding-top: 0px;
+  background-color: rgb(200, 200, 255);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  font-size: 25px;
+  color: darkorchid;
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 1cm;
+  overflow: hidden;
+  text-align: center;
+}
+
+.converter {
+  margin-top: 10%;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: rgb(187, 187, 240);
+  padding: 50px 50px 170px 50px;
+}
+
+.converter input {
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  height: 40px;
+  box-sizing: border-box;  
+}  
+
+.converter span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 10px; 
+}
+
+.converter span select {
+  background-color: rgb(164, 164, 229);
+  font-size: inherit;
+  padding: 10px;
+  border: 0;
+  margin: 0;
+  border-radius: 0px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  border-radius: 10px;  
+}
+
+.converter span::before, .converter span::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;  
+}
+  
+.converter-first, .converter-second {
+  float: left;
+  margin-top: 10px;
+  box-sizing: border-box;
+  width: 45%;  
+}
+
+.equals {
+  float: left;
+  box-sizing: border-box;
+  width: 10%;
+  font-size: 2.4em;
+  line-height: 0;
+  text-align: center;  
+}
+
+.converter-first {
+  padding-right: 10px;  
+}
+
+.converter-second {
+  padding-left: 10px;  
+}

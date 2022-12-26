@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+  <title> Unit Converter </title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+  <h1 class="heading"> UNIT CONVERTER </h1>
+
+  <div class="converter">
+    <form name="property_dropdown">
+      <span>
+        <select 
+        name="the_menu"
+        class="select-property" 
+        onChange="UpdateMenu(this, document.form_first.unit_menu); UpdateMenu(this, document.form_second.unit_menu)">
+        </select>
+      </span>
+    </form>
+
+    <div class="converter-first">
+      <form name="form_first" onSubmit="return false">
+        <input 
+          type="text" 
+          class="numbersonly" 
+          name="unit_input" 
+          maxlength="20" 
+          value="0" 
+          onkeyup="CalculateUnit(document.form_first, document.form_second)">
+        <span>
+          <select name="unit_menu" onChange="CalculateUnit(document.form_second, document.form_first)"></select>
+        </span>
+      </form>
+    </div> 
+    
+    <div class="equals">
+      <h4>⇄</h4>
+    </div> 
+
+    <div class="converter-second">
+      <form name="form_second" onSubmit="return false">
+        <input 
+          type="text" 
+          class="numbersonly" 
+          name="unit_input" 
+          maxlength="20" 
+          value="0" 
+          onkeyup="CalculateUnit(document.form_second, document.form_first)">
+        <span>
+          <select name="unit_menu" onChange="CalculateUnit(document.form_first, document.form_second)"></select>
+        </span>
+      </form>
+    </div> 
+
+  </div>
+</body>
